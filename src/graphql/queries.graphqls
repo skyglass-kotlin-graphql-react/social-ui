@@ -1,0 +1,23 @@
+query HelloWorld {
+  helloworld
+}
+
+query getPosts {
+  getPosts {
+    id
+    title
+    description
+    comments {
+      id
+      text
+      author {
+        id
+        name
+      }
+    }
+    author {
+      id
+      name
+    }
+  }
+}
